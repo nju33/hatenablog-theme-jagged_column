@@ -1,0 +1,589 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Strait);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+a {
+  color: #5e9aab;
+}
+a:visited {
+  color: #5e9aab;
+}
+a:hover {
+  color: #365d68;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.entry-content h1 {
+  font-size: 2.3em;
+  margin: 0.15em 0;
+}
+.entry-content h2 {
+  font-size: 2em;
+  margin: 0.2em 0;
+}
+.entry-content h3 {
+  font-size: 1.8em;
+  margin: 0.45em 0;
+}
+.entry-content h4 {
+  font-size: 1.4em;
+  margin: 0.5em 0;
+}
+.entry-content h5 {
+  font-size: 1.25em;
+  margin: 0.5em 0;
+}
+.entry-content h6 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+blockquote {
+  padding: 2em;
+  position: relative;
+}
+blockquote:before, blockquote:after {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #3c3c3c;
+  position: absolute;
+}
+blockquote:before {
+  content: "“";
+  top: 0;
+  left: 0.5em;
+}
+blockquote:after {
+  content: "”";
+  bottom: -0.5em;
+  right: 0.5em;
+}
+
+pre {
+  background-color: #3c3c3c;
+  padding: 1em;
+  line-height: 1.5;
+  white-space: pre;
+  word-wrap: normal;
+  overflow: hidden;
+  color: #f8f8f8;
+}
+pre:hover {
+  overflow: auto;
+}
+
+ul {
+  list-style: circle;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul, ol {
+  margin-left: 2em;
+  line-height: 2;
+}
+
+dd {
+  margin-left: 1em;
+}
+
+table {
+  border: 1px solid #3c3c3c;
+}
+
+th {
+  background-color: #e4e4e4;
+}
+
+td, th {
+  border: 1px solid #3c3c3c;
+  padding: 0.34em 0.5em;
+}
+
+body {
+  line-height: 1.9;
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130301/20130301165929.png");
+  font-size: 0.95em;
+  font-family: Verdana, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+#globalheader-container {
+  color: #f8f8f8;
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130301/20130301165928.png");
+}
+
+#container {
+  position: relative;
+  bottom: 3.4em;
+}
+
+#container-inner, #content-inner, #footer {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#blog-title, #wrapper, #footer-inner {
+  display: block;
+  width: 50%;
+  margin-left: 9.61538%;
+  margin-right: 40.38462%;
+  background-color: #f8f8f8;
+  color: #3c3c3c;
+  border-left: 1px dashed #282828;
+  border-right: 1px dashed #3c3c3c;
+}
+
+#blog-title {
+  padding-top: 3.4em;
+  font-family: "Strait", sans-serif;
+}
+
+#wrapper {
+  display: block;
+  position: relative;
+}
+#wrapper:after {
+  content: "";
+  position: absolute;
+  left: -0.08em;
+  height: 3.4em;
+  width: 100%;
+  background-color: #f8f8f8;
+  border-left: 1px dashed #3c3c3c;
+  border-right: 1px dashed #3c3c3c;
+}
+
+#blog-title-inner, #main {
+  display: block;
+  width: 92.30769%;
+  margin-left: 3.84615%;
+  margin-right: 3.84615%;
+}
+
+#title, #blog-description {
+  display: block;
+  width: 100%;
+}
+
+#title {
+  font-size: 2em;
+  letter-spacing: -0.05em;
+}
+#title a {
+  text-decoration: none;
+  color: #3c3c3c;
+  -webkit-transition: color, 0, ease-in-out, 0.5s;
+  -moz-transition: color, 0, ease-in-out, 0.5s;
+  -o-transition: color, 0, ease-in-out, 0.5s;
+  transition: color, 0, ease-in-out, 0.5s;
+}
+#title a:hover {
+  color: #5e9aab;
+  letter-spacing: 0.1em;
+}
+
+#blog-description {
+  position: relative;
+  bottom: 1em;
+  font-size: 0.9em;
+}
+
+#entry-header {
+  position: relative;
+}
+
+.date {
+  position: absolute;
+  height: 0;
+}
+.date a {
+  font-size: 0.89em;
+  color: #3c3c3c;
+  text-decoration: none;
+  background-color: #f8f8f8;
+  position: relative;
+  right: 8.2em;
+  top: 0.7em;
+  padding: 0.34em 0.9em 0.34em 0.5em;
+  border-left: 1px dashed #3c3c3c;
+}
+.date a:hover {
+  color: #5e9aab;
+}
+
+.hyphen {
+  font-size: 0.8em;
+}
+
+.entry-title {
+  font-size: 1.8em;
+}
+.entry-title a {
+  text-decoration: none;
+}
+
+.categories {
+  text-align: right;
+  font-size: 0.8em;
+  line-height: 1;
+}
+.categories:before {
+  content: "カテゴリー : ";
+  margin-right: 0.5em;
+}
+.categories a {
+  margin: 0 0.3em;
+  text-decoration: none;
+}
+
+.entry-header-menu {
+  position: absolute;
+  height: 0;
+}
+.entry-header-menu a {
+  position: relative;
+  right: 7.3em;
+  background-color: transparent;
+  color: #a2a2a2;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-top: 1px solid #505050;
+  border-bottom: 1px solid #282828;
+}
+.entry-header-menu a:hover {
+  color: #5e9aab;
+}
+
+.hentry:not(:first-child) {
+  padding-top: 1em;
+}
+
+.hentry {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #e4e4e4;
+}
+.hentry .keyword {
+  color: #3c3c3c;
+}
+.hentry .keyword:hover {
+  color: #5d5d5d;
+}
+
+.entry-content {
+  font-size: 0.89em;
+}
+
+img.hatena-fotolife, img.magnifiable {
+  max-width: 100%;
+  margin: 0 auto 1em;
+  width: auto;
+  display: block;
+  -webkit-border-radius: 3px 3px;
+  -moz-border-radius: 3px / 3px;
+  border-radius: 3px / 3px;
+  padding: 0.35em;
+  background-color: #f8f8f8;
+  border: 1px solid #e4e4e4;
+}
+img.hatena-fotolife:hover, img.magnifiable:hover {
+  background-color: #e4e4e4;
+}
+
+img.hatena-image-left, img.hatena-image-right {
+  max-width: 31%;
+  display: inline;
+}
+
+a img.hatena-image-left {
+  float: left;
+  margin: 0 1em 0 0;
+}
+
+a img.hatena-image-right {
+  float: right;
+  margin: 0 0 0 1em;
+}
+
+.hatena-asin-detail, blockquote, pre {
+  border: 1px solid #e4e4e4;
+  -webkit-border-radius: 5px 5px;
+  -moz-border-radius: 5px / 5px;
+  border-radius: 5px / 5px;
+}
+
+.hatena-asin-detail {
+  padding: 1em;
+  *zoom: 1;
+}
+.hatena-asin-detail:before, .hatena-asin-detail:after {
+  content: "";
+  display: table;
+}
+.hatena-asin-detail:after {
+  clear: both;
+}
+
+.hatena-asin-detail > a {
+  display: inline;
+  float: left;
+  width: 30.76923%;
+  margin-right: 7.69231%;
+}
+.hatena-asin-detail > a img {
+  margin-left: 3.3em;
+}
+
+.hatena-asin-detail-info {
+  display: inline;
+  float: left;
+  width: 61.53846%;
+  line-height: 1.5;
+  border-left: 1px dashed #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 1em;
+}
+.hatena-asin-detail-info ul {
+  display: block;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.hatena-asin-detail-title {
+  display: block;
+  width: 100%;
+}
+
+.entry-fotter {
+  margin-top: 0.5em;
+}
+
+.entry-footer-section {
+  text-align: right;
+}
+
+.hatena-star-container, .star-navigation-tooltip, #google_afc_user, .customized-footer {
+  position: relative;
+  bottom: 2.78em;
+}
+
+.comment-box {
+  position: relative;
+  bottom: 2.1em;
+  font-size: 0.89em;
+}
+.comment-box ul {
+  list-style: none;
+  margin: 0;
+}
+.comment-box li {
+  padding: 0.5em;
+  border-bottom: 1px dashed #e4e4e4;
+  line-height: 1;
+}
+
+.comment-content {
+  line-height: 1.5;
+  margin-left: 1em;
+}
+
+.leave-comment-title {
+  font-size: 0.8em;
+}
+.leave-comment-title:before {
+  content: "≫";
+  letter-spacing: 0.2em;
+  font-size: 0.8em;
+  color: #3c3c3c;
+}
+
+#box2 {
+  color: #f8f8f8;
+  position: fixed;
+  top: -45em;
+}
+
+#box2-inner {
+  position: relative;
+  left: 39em;
+  width: 367px;
+  top: 48.7em;
+}
+
+.hatena-module:nth-child(2n + 1) {
+  clear: both;
+  display: inline;
+  float: left;
+  width: 46.15385%;
+  margin-right: 7.69231%;
+}
+
+.hatena-module:not(:nth-child(2n + 1)) {
+  display: inline;
+  float: left;
+  width: 46.15385%;
+}
+
+.hatena-module {
+  min-height: 12em;
+  height: auto !important;
+  height: 12em;
+}
+.hatena-module a {
+  text-decoration: none;
+}
+
+.hatena-module-title {
+  border-bottom: 1px dashed #727272;
+  margin-bottom: 0.34em;
+  padding-bottom: 0.34em;
+}
+.hatena-module-title a {
+  color: #f8f8f8;
+}
+.hatena-module-title a:hover {
+  color: #c2c2c2;
+}
+
+.hatena-module-body {
+  font-size: 0.89em;
+  margin-left: 0.89em;
+}
+.hatena-module-body ul {
+  list-style: none;
+  margin: 0;
+  line-height: 1.7;
+  font-size: 0.89em;
+}
+
+.search-module-input {
+  margin: 0.34em 0;
+  height: 1.3em;
+  line-height: 1.3;
+  text-indent: 0.55em;
+  background-color: transparent;
+  border: none;
+  outline-color: #5e9aab;
+  border-top: 1px solid #505050;
+  border-bottom: 1px solid #282828;
+  color: #f8f8f8;
+}
+
+.search-module-button {
+  padding: 0 0.89em;
+  line-height: 1;
+  border: none;
+  border-left: 1px solid #5e9aab;
+  background-color: transparent;
+  color: #a2a2a2;
+  -webkit-transition: all, 0s, ease-in-out, 0.5s;
+  -moz-transition: all, 0s, ease-in-out, 0.5s;
+  -o-transition: all, 0s, ease-in-out, 0.5s;
+  transition: all, 0s, ease-in-out, 0.5s;
+}
+.search-module-button:hover {
+  background-color: #505050;
+  color: #5e9aab;
+}
+
+#footer {
+  clear: both;
+  text-align: center;
+}
+
+#footer-inner {
+  font-size: 0.8em;
+}
+#footer-inner:after {
+  content: ".";
+  color: transparent;
+}
+#footer-inner a {
+  color: #3c3c3c;
+  text-decoration: none;
+}
+#footer-inner a:hover {
+  color: #1b1b1b;
+}
+
+.breadcrumb {
+  padding: 1em 0 1em 1.3em;
+  line-height: 1;
+  font-size: 0.89em;
+  border-left: 1px dashed #282828;
+  border-right: 1px dashed #3c3c3c;
+  background-color: #f8f8f8;
+  margin-left: 6.8em;
+  margin-right: 28.5em;
+}
+
+section.autopagerize_page_element {
+  font-size: 1em;
+  padding: 1em 0;
+}
+section.autopagerize_page_element ul {
+  line-height: 1.3;
+}
+section.autopagerize_page_element .entry-title {
+  font-size: 1em;
+}
