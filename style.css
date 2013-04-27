@@ -197,6 +197,26 @@ body {
   font-family: "Strait", sans-serif;
 }
 
+[class*="header-image-"] #blog-title {
+  position: absolute;
+  left: 26.3em;
+  z-index: 2;
+  max-width: 30em !important;
+  border: none;
+}
+[class*="header-image-"] #blog-title #title a, [class*="header-image-"] #blog-title #blog-description {
+  color: inherit;
+  text-shadow: 0 0 0;
+}
+[class*="header-image-"] #blog-title #title, [class*="header-image-"] #blog-title #blog-description {
+  position: relative;
+  top: 34%;
+  left: 2%;
+}
+[class*="header-image-"] #main-inner {
+  padding-top: 19em;
+}
+
 #wrapper {
   display: block;
   position: relative;
@@ -331,6 +351,9 @@ body {
 .entry-content {
   font-size: 0.89em;
 }
+.entry-content iframe {
+  max-width: 100%;
+}
 
 img.hatena-fotolife, img.magnifiable {
   max-width: 100%;
@@ -457,6 +480,19 @@ a img.hatena-image-right {
   color: #3c3c3c;
 }
 
+.pager {
+  position: relative;
+}
+
+.pager-next, .page-next {
+  padding: 0 0.5em;
+}
+
+.pager-prev {
+  position: absolute;
+  right: 0;
+}
+
 #box2 {
   color: #f8f8f8;
   position: fixed;
@@ -566,13 +602,16 @@ a img.hatena-image-right {
   color: #1b1b1b;
 }
 
+#top-box {
+  position: absolute;
+  top: 17em;
+  z-index: 2;
+}
+
 .breadcrumb {
   padding: 1em 0 1em 1.3em;
   line-height: 1;
   font-size: 0.89em;
-  border-left: 1px dashed #282828;
-  border-right: 1px dashed #3c3c3c;
-  background-color: #f8f8f8;
   margin-left: 6.8em;
   margin-right: 28.5em;
 }
